@@ -31,7 +31,7 @@ class CombineItemsInCart < ActiveRecord::Migration[5.1]
   			LineItem.create cart_id: line_item.cart_id,
   				product_id: line_item.product_id, quantity: 1
   		end
-  		#Удаление исходной записи
+  		# Удаление исходной записи
   		line_item.destroy
   	end
   end
