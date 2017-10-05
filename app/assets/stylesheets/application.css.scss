@@ -1,0 +1,166 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require fancybox
+ *= require_self
+ */
+
+#banner {
+
+  background: #fff;
+
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid;
+
+  font: small-caps 40px/40px "Tahoma", serif;
+
+  color: #000;
+
+  text-align: center;
+
+}
+
+ 
+
+#banner img {
+
+  float: left;
+
+}
+
+ 
+
+#columns {
+
+  background: #000;
+
+}
+
+ 
+
+#main {
+
+  margin-left: 17em;
+
+  padding-top: 4ex;
+
+  padding-left: 2em;
+
+  background: white;
+
+}
+
+ 
+
+#side {
+
+  float: left;
+
+  padding-top: 1em;
+
+  padding-left: 1em;
+
+  padding-bottom: 1em;
+
+  width: 16em;
+
+  background: #000;
+
+}
+
+ 
+
+#side a {
+
+  color: #fff;
+
+  font-size: small;
+  text-decoration:none;
+
+}
+#side a:hover {
+
+  color: #888;
+
+  font-size: small;
+  text-decoration:none;
+
+}
+
+ 
+
+#side ul {
+
+  padding: 0;
+
+}
+
+ 
+
+#side li {
+
+  list-style: none;
+
+}
+
+.store {
+  h1 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font: 150% sans-serif;
+    color: #226;
+    border-bottom: 3px dotted #77d;
+  }
+  /* write in catalog store*/
+  .entry {
+    overflow: auto;
+    margin-top:1em;
+    border-bottom: 1px dotted #77d;
+    min-height: 100px;
+    img {
+      width: 80px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      float:left;
+    }
+    h3 {
+      font-size: 120%;
+      font-family: sans-serif;
+      margin-left: 100px;
+      margin-top: 0;
+      margin-bottom:  2px;
+      color: #227;
+    }
+    p, div.price_line {
+      margin-left: 100px;
+      margin-top: 0.5em;
+      margin-bottom: 0.8em;
+    }
+    .price {
+      color: #44a;
+      font-weight: bold;
+      margin-right: 3em;
+    }
+  }
+}
+.desc { 
+  font-size: 120%;
+    font-family: sans-serif;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #227;
+}

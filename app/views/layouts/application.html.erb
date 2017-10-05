@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ресторан на руби</title>
+
+   <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="<%= controller.controller_name %>">
+  <div id="banner">
+  	
+
+<%= link_to image_tag("logo.png", width: '155'), store_path %>
+
+  	<%= @page_title || "Сашими - в лучших традициях японской кухни"%>
+  </div>
+  <div id="columns">
+	  <div id="side">
+	  <ul>
+   <li><%= link_to 'Главная', store_path %></li>
+	  	
+	  	<li><a href="#">Меню</a></li>
+	  	<li><a href="#">О нас</a></li>
+	  	<li><a href="#">Контакты</a></li>
+	  </ul>
+	  </div>
+	  <div id="main">
+    	<%= yield %>
+	  </div>
+
+
+
+
+  </div>
+
+
+  <%= link_to "модальное окно", "#hello", class: "fancybox" %>
+
+<div style="display:none;">
+  <div id="hello">
+  модальное окно
+  </div>
+</div>
+
+  </body>
+</html>
