@@ -6,6 +6,8 @@
 <%unless cart.line_items.empty? %>
 <div class="cart_title">
 <h2>Ваша корзина</h2>
+<%= button_to 'очистить', cart, method: :delete, data: {confirm: 'Вы уверены?'}%>
+
 </div>
 
 <table>
@@ -19,6 +21,5 @@
 </table>
 
 
-
-<%= button_to 'Очистить корзину', cart, method: :delete, data: {confirm: 'Вы уверены?'}%>
+<%= button_to "Оформить заказ", new_order_path, method: :get  %>
 <% end %>
