@@ -13,6 +13,8 @@
 
 //= require jquery
 
+//= require jquery-ui
+//= require jquery-ui/effects/effect-blind
 //= require fancybox
 //= require rails-ujs
 //= require turbolinks
@@ -25,3 +27,4 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("a.fancybox").fancybox();
 });
+

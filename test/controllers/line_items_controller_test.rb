@@ -20,7 +20,8 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
       post :create, product_id: products(:ruby).id
       #post line_items_url, params: { line_item: { cart_id: @line_item.cart_id, product: @line_item.product } }
     end
-    assert_redirected_to cart_path(assigns(:line_item).cart)
+    assert_redirected_to store_path
+    #assert_redirected_to cart_path(assigns(:line_item).cart)
     #assert_redirected_to line_item_url(LineItem.last)
   end
 
