@@ -1,17 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Заголовок:</strong>
   <%= @product.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Аннотация:</strong>
   <%= @product.description %>
 </p>
 
 <p>
-  <strong>Image url:</strong>
+  <strong>Картинка:</strong>
+  <br />
+  <%= image_tag @product.image_url, width:200 %>
+  <br />
   <%= @product.image_url %>
 </p>
 

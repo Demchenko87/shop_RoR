@@ -1,6 +1,6 @@
 class OrderNotifier < ActionMailer::Base
 
-  default :from => 'Sam Ruby <depot@example.com>'
+  default :from => 'Sam Ruby <conder@ukr.net>'
 
  
 
